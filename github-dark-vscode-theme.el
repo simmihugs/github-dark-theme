@@ -55,8 +55,9 @@
         `(font-lock-warning-face ((,class (:foreground ,warning :background ,bg2))))
         `(term-color-black ((,class (:foreground ,fg2 :background nil))))
         `(region ((,class (:background ,fg1 :foreground ,bg1))))
-        `(highlight ((,class (:foreground ,fg3 :background ,bg3))))
-	`(hl-line ((,class (:background  ,bg2))))
+        ;; Because of rainbow delimiters
+        ;; `(highlight ((,class (:foreground ,fg3 :background ,bg3))))
+	;; `(hl-line ((,class (:background  ,bg2))))
 	`(fringe ((,class (:background ,bg2 :foreground ,fg4))))
 	`(cursor ((,class (:background ,fg1))))
         `(show-paren-match-face ((,class (:background ,warning))))
